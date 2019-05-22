@@ -1,6 +1,6 @@
 # DataStax C# Driver for Apache Cassandra Quickstart
 
-A basic C#/.NET CRUD application using the DataStax C# Driver for Apache Cassandra. 
+A basic C#/.NET demo CRUD application using the DataStax C# Driver for Apache Cassandra. 
 The intent is to help users get up and running quickly with the driver. 
 If you are having trouble, the complete code solution for `Program.cs` can be found [here](https://gist.github.com/beccam/5abab3b4072d5a0027475481f1d5075f).
 
