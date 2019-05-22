@@ -8,7 +8,7 @@ namespace QuickStart
     {
         static void Main(string[] args)
         { 
-
+            // Connect to the "demo" keyspace on our cluster running at 127.0.0.1
             Cluster cluster = Cluster.Builder().AddContactPoint("127.0.0.1").Build();
             ISession session = cluster.Connect("demo");
 
@@ -23,34 +23,35 @@ namespace QuickStart
             DeleteUser(session, "Jones");
         }
 
-        private static void SetUser(ISession session, String lastname, int age, String city, String email, String firstname) {
-            var statement = new SimpleStatement("INSERT INTO users (lastname, age, city, email, firstname) VALUES (?,?,?,?,?)", lastname, age, city, email, firstname);
+        private static void SetUser(ISession session, String lastname, int age, String city, String email, String firstname)
+        {
 
-            session.Execute(statement);
+            //TO DO: execute SimpleStatement that inserts one user into the table
+
+        }
+
+        private static void GetUser(ISession session, String lastname)
+        {
+
+            //TO DO: execute SimpleStatement that retrieves one user from the table
+
+            //TO DO: print firstname and age of user
 
         }
 
-        private static void GetUser(ISession session, String lastname){
+        public static void UpdateUser(ISession session, int age, String lastname)
+        {
 
-            var statement = new SimpleStatement("SELECT * FROM users WHERE lastname = ?", lastname);
-            var result = session.Execute(statement).First();
-            Console.WriteLine("{0} {1}", result["firstname"], result["age"]);
+            //TO DO: execute SimpleStatement that updates the age of one user
 
         }
-       
-        private static void UpdateUser(ISession session, int age, String lastname) {
 
-            var statement = new SimpleStatement("UPDATE users SET age =? WHERE lastname = ?", age, lastname);
+        public static void DeleteUser(ISession session, String lastname)
+        {
 
-            session.Execute(statement);
+            //TO DO: execute SimpleStatement that deletes one user from the table
+
         }
 
-        private static void DeleteUser(ISession session, String lastname) {
-
-            var statement = new SimpleStatement("DELETE FROM users WHERE lastname = ?", lastname);
-
-            session.Execute(statement);
-        }
-       
     }
 }
