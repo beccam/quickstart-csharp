@@ -53,6 +53,7 @@ private static void SetUser(ISession session, String lastname, int age, String c
 ```
 
 ```csharp
+
 ### SELECT a user
  private static void GetUser(ISession session, String lastname){
 
