@@ -52,6 +52,7 @@ private static void SetUser(ISession session, String lastname, int age, String c
 }
 ```
 ### SELECT a user
+```csharp
  private static void GetUser(ISession session, String lastname){
 
       //TO DO: execute SimpleStatement that retrieves one user from the table
