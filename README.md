@@ -2,7 +2,7 @@
 
 A basic C#/.NET CRUD application using the DataStax C# Driver for Apache Cassandra. 
 The intent is to help users get up and running quickly with the driver. 
-If you are having trouble, the complete code solution for `Program.cs` can be found [here](https://gist.github.com/beccam/d8491990895fe659e0584a4bc31d1df3).
+If you are having trouble, the complete code solution for `Program.cs` can be found [here](https://gist.github.com/beccam/5abab3b4072d5a0027475481f1d5075f).
 
 ## Prerequisites
   * A running instance of [Apache Cassandra®](http://cassandra.apache.org/download/) 1.2+
@@ -26,9 +26,9 @@ CREATE TABLE demo.users (
 
 ## Connect to your cluster
 
-All of our code is contained in the `GettingStarted` class. 
+All of our code is contained in the `Program` class. 
 Note how the main method creates a session to connect to our cluster and runs the CRUD operations against it. 
-Replace the default parameters in `CqlSession.builder()` with your own hostname, port and datacenter.
+Replace the default parameter in `Cluster.Builder()` with your own contact point.
 
 ```csharp
 // TO DO: Fill in your own host, port, and data center
