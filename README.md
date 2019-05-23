@@ -7,6 +7,7 @@ If you are having trouble, the complete code solution for `Program.cs` can be fo
 ## Prerequisites
   * A running instance of [Apache Cassandra®](http://cassandra.apache.org/download/) 1.2+
   * [Mircosoft Visual Studio](https://visualstudio.microsoft.com/vs/) with .NET Core 2.1+
+  * IDE Alternatives: [Visual Studio Code](https://code.visualstudio.com/) or [Rider](https://www.jetbrains.com/rider/)
   
   
 ## Create the keyspace and table
