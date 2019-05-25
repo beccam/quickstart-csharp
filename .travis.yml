@@ -1,2 +1,6 @@
 language: csharp
-solution: QuickStart.sln
+mono: none
+dotnet: 2.1.505
+script:
+ - dotnet restore
+...
