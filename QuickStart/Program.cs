@@ -21,6 +21,9 @@ namespace QuickStart
             GetUser(session, "Jones");
 
             DeleteUser(session, "Jones");
+            
+            cluster.Dispose()
+
         }
 
         private static void SetUser(ISession session, String lastname, int age, String city, String email, String firstname)
