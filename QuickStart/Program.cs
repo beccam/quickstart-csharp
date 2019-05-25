@@ -8,7 +8,7 @@ namespace QuickStart
     {
         static void Main(string[] args)
         { 
-            // Connect to the "demo" keyspace on our cluster running at 127.0.0.1
+            // TO DO: Fill in your own contact point
             Cluster cluster = Cluster.Builder().AddContactPoint("127.0.0.1").Build();
             ISession session = cluster.Connect("demo");
 
