@@ -34,7 +34,7 @@ Note how the main method creates a session to connect to our cluster and runs th
 Replace the default parameter in `Cluster.Builder()` with your own contact point.
 
 ```csharp
-// TO DO: Fill in your own host, port, and data center
+// TO DO: Fill in the ip address of your node
 Cluster cluster = Cluster.Builder()
                          .AddContactPoint("127.0.0.1")
                          .Build();
