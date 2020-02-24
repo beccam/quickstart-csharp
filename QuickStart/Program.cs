@@ -22,7 +22,7 @@ namespace QuickStart
 
             DeleteUser(session, "Jones");
             
-            cluster.Dispose()
+            cluster.Dispose();
 
         }
 
